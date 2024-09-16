@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>culiculitor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="caliculitorVid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- -------------бек граунд картинка мб видео------------- -->
+    <!-- <div class="video-container">
+        <video autoplay loop muted>
+          <source src="21782-321298091.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div> -->
+    <div class="Photo_bg">
+        <img src="1Fon.png">
+    </div>
+
+
+    <!-- -------------Сам калькулятор и его бокс отдельно окошко с вводом------------- -->
+    <div class="culiculitor_obh">
+        <div class="box_ramca">
+            <div class="Cifrs">
+                <button onclick="addNumber(1)">1</button>
+                <button onclick="addNumber(2)">2</button>
+                <button onclick="addNumber(3)">3</button>
+                <button onclick="addNumber(4)">4</button>
+                <button onclick="addNumber(5)">5</button>
+                <button onclick="addNumber(6)">6</button>
+                <button onclick="addNumber(7)">7</button>
+                <button onclick="addNumber(8)">8</button>
+                <button onclick="addNumber(9)">9</button>
+                <button onclick="addNumber(0)">0</button>
+                <div class="culiculitor_obh">
+                    <input type="text" id="inputField" readonly>
+                </div>
+            </div>
+            <div class="Znaks">
+                <button onclick="setOperator('+')">+</button>
+                <button onclick="setOperator('-')">-</button>
+                <button onclick="setOperator('÷')">÷</button>
+                <button onclick="setOperator('×')">×</button>
+            </div>
+            <div class="scet">
+                <button onclick="calculate()">=</button>
+                
+            </div>
+            <div id='C1'><button id='C1' onclick="clearDisplay()">C</button></div>
+            
+            
+        </div>
+    </div>
+    
+    <!-- -------------рамка за калькулятором------------- -->
+    <div class="Box_ramp_Box"></div>
+            
+
+        
+    
+    
+</body>
+<script src="caliculitorFunctional.js"></script>
+</html>
